@@ -12,7 +12,6 @@ namespace DnDCharacterCreator
     {
         static void Main(string[] args)
         {
-            Console.WriteLine($"Welcome to Character Creator");
             PrintCharacter(CreateCharacter());
             Console.ReadKey();
         }
