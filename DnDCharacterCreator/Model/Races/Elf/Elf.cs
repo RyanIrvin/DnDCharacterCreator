@@ -8,17 +8,13 @@ namespace DnDCharacterCreator.Model.Races
 {
     abstract public class Elf : IRace
     {
-        internal Ability BaseAbilities = new Ability(dexterity: 2);
-
-        internal Proficiency[] BaseProficiencies = new Proficiency[] { };
-
-        public Ability AbilityModifier => BaseAbilities;
+        public Ability AbilityModifier => new Ability(dexterity: 2);
 
         public Size Size => Size.Medium;
 
         public Alignment[] AlignmentRestriction => null;
 
-        public Proficiency[] Proficiencies => BaseProficiencies;
+        public Proficiency[] Proficiencies => new Proficiency[] { };
 
         public int Speed => 30;
 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DnDCharacterCreator.Model.Races
 {
-    class Dwarf : IRace
+    abstract public class Dwarf : IRace
     {
         public Ability AbilityModifier => new Ability(constitution: 2);
 

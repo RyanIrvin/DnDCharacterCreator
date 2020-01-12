@@ -52,9 +52,9 @@
     <Compile Include="Model\Feat.cs" />
     <Compile Include="Model\Item.cs" />
     <Compile Include="Model\Proficiency.cs" />
-    <Compile Include="Model\Races\DarkElf.cs" />
-    <Compile Include="Model\Races\Dwarf.cs" />
-    <Compile Include="Model\Races\Elf.cs" />
+    <Compile Include="Model\Races\Elf\DarkElf.cs" />
+    <Compile Include="Model\Races\Dwarf\Dwarf.cs" />
+    <Compile Include="Model\Races\Elf\Elf.cs" />
     <Compile Include="Model\Races\IRace.cs" />
     <Compile Include="Model\Races\ISubRace.cs" />
     <Compile Include="Model\Races\Language.cs" />
