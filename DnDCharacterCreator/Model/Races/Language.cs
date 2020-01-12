@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DnDCharacterCreator.Model.Races
 {
-    enum Language
+    public enum Language
     {
         Abyssal,
         Aquan,
