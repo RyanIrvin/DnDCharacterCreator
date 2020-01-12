@@ -8,10 +8,10 @@ namespace DnDCharacterCreator.Model.Races
 {
     class Elf : IRace
     {
-        public Ability AbilityModifier { get => new Ability(dexterity: 2); }
-        public Size Size { get => Size.Medium; }
-        public Alignment[] AlignmentRestriction { get => new Alignment[] { }; }
-        public Proficiency[] Proficiencies { get => new Proficiency[] { }; }
-        public int Speed { get => 30; }
+        public Ability AbilityModifier => new Ability(dexterity: 2);
+        public Size Size => Size.Medium;
+        public Alignment[] AlignmentRestriction => null;
+        public Proficiency[] Proficiencies => null;
+        public int Speed => 30;
     }
 }
