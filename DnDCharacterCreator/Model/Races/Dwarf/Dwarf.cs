@@ -18,6 +18,6 @@ namespace DnDCharacterCreator.Model.Races
 
         public int Speed => 25;
 
-        public Language[] Languages => null;
+        public Language[] Languages => new Language[] { Language.Common, Language.Dwarvish };
     }
 }

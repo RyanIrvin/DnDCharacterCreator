@@ -52,6 +52,7 @@ namespace DnDCharacterCreator
 
         private static ISubRace GetRace(string race)
         {
+            race = race.Replace(" ", "");
             Type t = Type.GetType(race);
             return (ISubRace) Activator.CreateInstance(t);
         }
