@@ -10,6 +10,6 @@ namespace DnDCharacterCreator.Model.Races
     {
         private Ability Ability = new Ability(constitution: 1);
 
-        public Ability AbilityModifier => Ability += AbilityModifier;
+        public new Ability AbilityModifier => Ability += AbilityModifier;
     }
 }
