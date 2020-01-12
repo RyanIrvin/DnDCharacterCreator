@@ -17,5 +17,7 @@ namespace DnDCharacterCreator.Model.Races
         public Proficiency[] Proficiencies => null;
 
         public int Speed => 25;
+
+        public Language[] Languages => null;
     }
 }

@@ -30,31 +30,30 @@ namespace DnDCharacterCreator
             Character character = new Character();
             Console.WriteLine("What's your Name?");
             character.SetName(Console.ReadLine());
+            //Console.WriteLine($"Pick your Str from {String.Join(",",character.Ability.GetStandardArray())}");
+            //Int32.TryParse(Console.ReadLine(), out int str);
+            //Console.WriteLine($"Pick your Dex from {String.Join(",", character.Ability.GetStandardArray(str))}");
+            //Int32.TryParse(Console.ReadLine(), out int dex);
+            //Console.WriteLine($"Pick your Con from {String.Join(",", character.Ability.GetStandardArray(dex))}");
+            //Int32.TryParse(Console.ReadLine(), out int con);
+            //Console.WriteLine($"Pick your Int from {String.Join(",", character.Ability.GetStandardArray(con))}");
+            //Int32.TryParse(Console.ReadLine(), out int @int);
+            //Console.WriteLine($"Pick your Wis from {String.Join(",", character.Ability.GetStandardArray(@int))}");
+            //Int32.TryParse(Console.ReadLine(), out int wis);
+            //Console.WriteLine($"Pick your Cha from {String.Join(",", character.Ability.GetStandardArray(wis))}");
+            //Int32.TryParse(Console.ReadLine(), out int cha);
 
-            Console.WriteLine($"Pick your Str from {String.Join(",",character.Ability.GetStandardArray())}");
-            Int32.TryParse(Console.ReadLine(), out int str);
-            Console.WriteLine($"Pick your Dex from {String.Join(",", character.Ability.GetStandardArray(str))}");
-            Int32.TryParse(Console.ReadLine(), out int dex);
-            Console.WriteLine($"Pick your Con from {String.Join(",", character.Ability.GetStandardArray(dex))}");
-            Int32.TryParse(Console.ReadLine(), out int con);
-            Console.WriteLine($"Pick your Int from {String.Join(",", character.Ability.GetStandardArray(con))}");
-            Int32.TryParse(Console.ReadLine(), out int @int);
-            Console.WriteLine($"Pick your Wis from {String.Join(",", character.Ability.GetStandardArray(@int))}");
-            Int32.TryParse(Console.ReadLine(), out int wis);
-            Console.WriteLine($"Pick your Cha from {String.Join(",", character.Ability.GetStandardArray(wis))}");
-            Int32.TryParse(Console.ReadLine(), out int cha);
-
-            character.Ability = new Ability(str, dex, con, @int, wis, cha);
+            //character.Ability = new Ability(str, dex, con, @int, wis, cha);
             Console.WriteLine("What's your Race?");
             character.SetRace(GetRace($"DnDCharacterCreator.Model.Races.{Console.ReadLine()}"));
 
             return character;
         }
 
-        private static IRace GetRace(string race)
+        private static ISubRace GetRace(string race)
         {
             Type t = Type.GetType(race);
-            return (IRace) Activator.CreateInstance(t);
+            return (ISubRace) Activator.CreateInstance(t);
         }
     }
 }

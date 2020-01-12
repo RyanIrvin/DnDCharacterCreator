@@ -11,7 +11,7 @@ namespace DnDCharacterCreator.Model
         public Alignment Alignment;
         public Ability Ability = new Ability();
         private IRace Race;
-        private int Level;
+        private int Level = 0;
         public Class[] Class;
         public Feat[] Feat;
         public Proficiency[] Proficiency;
@@ -23,7 +23,7 @@ namespace DnDCharacterCreator.Model
         public Size GetSize() => Size;
         public IRace GetRace() => Race;
         public void SetName(string value) => Name = value;
-        public void SetRace(IRace value)
+        public void SetRace(ISubRace value)
         {
             Race = value;
             Ability += value.AbilityModifier;
