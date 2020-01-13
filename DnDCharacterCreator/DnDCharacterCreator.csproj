@@ -67,6 +67,8 @@
     <Compile Include="Model\Races\Halfling\Halfling.cs" />
     <Compile Include="Model\Races\Halfling\LightfootHalfling.cs" />
     <Compile Include="Model\Races\Halfling\StoutHalfling.cs" />
+    <Compile Include="Model\Races\Human\Human.cs" />
+    <Compile Include="Model\Races\Human\VariantHuman.cs" />
     <Compile Include="Model\Races\IRace.cs" />
     <Compile Include="Model\Races\ISubRace.cs" />
     <Compile Include="Model\Races\Language.cs" />
