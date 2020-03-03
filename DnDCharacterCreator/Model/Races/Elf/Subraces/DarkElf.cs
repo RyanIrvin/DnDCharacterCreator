@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace DnDCharacterCreator.Model.Races
 {
-    class DeepGnome: Gnome, ISubRace
+    class DarkElf : Elf, ISubrace
     {
-        private Ability Ability = new Ability(dexterity: 1);
+        private Ability Abilities = new Ability(charisma: 1);
 
-        public new Ability AbilityModifier => Ability += base.AbilityModifier;
+        public new Ability AbilityModifier => Abilities += base.AbilityModifier;
     }
 }

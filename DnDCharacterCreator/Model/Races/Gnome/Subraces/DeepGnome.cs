@@ -5,8 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace DnDCharacterCreator.Model.Races
-{ 
-    class ForestGnome: Gnome, ISubRace
+{
+    class DeepGnome: Gnome, ISubrace
     {
         private Ability Ability = new Ability(dexterity: 1);
 

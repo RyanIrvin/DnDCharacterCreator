@@ -52,26 +52,26 @@
     <Compile Include="Model\Feat.cs" />
     <Compile Include="Model\Item.cs" />
     <Compile Include="Model\Proficiency.cs" />
-    <Compile Include="Model\Races\Dwarf\HillDwarf.cs" />
-    <Compile Include="Model\Races\Dwarf\MountainDwarf.cs" />
-    <Compile Include="Model\Races\Elf\DarkElf.cs" />
+    <Compile Include="Model\Races\Dwarf\Subraces\HillDwarf.cs" />
+    <Compile Include="Model\Races\Dwarf\Subraces\MountainDwarf.cs" />
+    <Compile Include="Model\Races\Elf\Subraces\DarkElf.cs" />
     <Compile Include="Model\Races\Dwarf\Dwarf.cs" />
-    <Compile Include="Model\Races\Elf\EladrinElf.cs" />
+    <Compile Include="Model\Races\Elf\Subraces\EladrinElf.cs" />
     <Compile Include="Model\Races\Elf\Elf.cs" />
-    <Compile Include="Model\Races\Elf\HighElf.cs" />
-    <Compile Include="Model\Races\Elf\WoodElf.cs" />
-    <Compile Include="Model\Races\Gnome\DeepGnome.cs" />
-    <Compile Include="Model\Races\Gnome\ForestGnome.cs" />
+    <Compile Include="Model\Races\Elf\Subraces\HighElf.cs" />
+    <Compile Include="Model\Races\Elf\Subraces\WoodElf.cs" />
+    <Compile Include="Model\Races\Gnome\Subraces\DeepGnome.cs" />
+    <Compile Include="Model\Races\Gnome\Subraces\ForestGnome.cs" />
     <Compile Include="Model\Races\Gnome\Gnome.cs" />
-    <Compile Include="Model\Races\Gnome\RockGnome.cs" />
+    <Compile Include="Model\Races\Gnome\Subraces\RockGnome.cs" />
     <Compile Include="Model\Races\Halfling\Halfling.cs" />
     <Compile Include="Model\Races\Halfling\LightfootHalfling.cs" />
     <Compile Include="Model\Races\Halfling\StoutHalfling.cs" />
     <Compile Include="Model\Races\Human\Human.cs" />
     <Compile Include="Model\Races\Human\VariantHuman.cs" />
     <Compile Include="Model\Races\IRace.cs" />
-    <Compile Include="Model\Races\ISubRace.cs" />
-    <Compile Include="Model\Races\Language.cs" />
+    <Compile Include="Model\Races\ISubrace.cs" />
+    <Compile Include="Model\Language.cs" />
     <Compile Include="Model\Size.cs" />
     <Compile Include="Model\Skill.cs" />
     <Compile Include="Program.cs" />
@@ -79,6 +79,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Model\Races\Halfling\Subraces\" />
+    <Folder Include="Model\Races\Human\Subraces\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

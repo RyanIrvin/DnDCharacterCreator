@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace DnDCharacterCreator.Model.Races
 {
-    class RockGnome: Gnome, ISubRace
+    class WoodElf: Elf, ISubrace
     {
-        private Ability Ability = new Ability(constitution: 1);
+        private Ability Ability = new Ability(wisdom: 1);
 
-        public new Ability AbilityModifier => Ability += AbilityModifier;
+        public new Ability AbilityModifier => Ability += base.AbilityModifier;
     }
 }

@@ -50,11 +50,11 @@ namespace DnDCharacterCreator
             return character;
         }
 
-        private static ISubRace GetRace(string race)
+        private static ISubrace GetRace(string race)
         {
             race = race.Replace(" ", "");
             Type t = Type.GetType(race);
-            return (ISubRace) Activator.CreateInstance(t);
+            return (ISubrace) Activator.CreateInstance(t);
         }
     }
 }

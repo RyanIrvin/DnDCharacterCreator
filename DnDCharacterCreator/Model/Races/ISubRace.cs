@@ -1,6 +1,6 @@
 ﻿namespace DnDCharacterCreator.Model.Races
 {
-    public interface ISubRace : IRace
+    public interface ISubrace : IRace
     {
         new Ability AbilityModifier { get; }
 

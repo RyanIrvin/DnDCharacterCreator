@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace DnDCharacterCreator.Model.Races
 {
-    class MountainDwarf : Dwarf, ISubRace
+    class HillDwarf : Dwarf, ISubrace
     {
-        private Ability Abilities = new Ability(strength: 2);
+        private Ability Abilities = new Ability(wisdom: 1);
 
         public new Ability AbilityModifier => Abilities += base.AbilityModifier;
     }

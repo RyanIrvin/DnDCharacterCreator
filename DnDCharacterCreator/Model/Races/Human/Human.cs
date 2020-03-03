@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DnDCharacterCreator.Model.Races
 {
-    class Human : IRace
+    class Human : IRace, ISubrace
     {
         public Ability AbilityModifier => new Ability(1,1,1,1,1,1);
 

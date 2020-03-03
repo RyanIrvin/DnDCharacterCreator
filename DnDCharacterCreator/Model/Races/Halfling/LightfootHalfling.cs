@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DnDCharacterCreator.Model.Races
 {
-    class LightfootHalfling : Halfling, ISubRace
+    class LightfootHalfling : Halfling, ISubrace
     {
         private Ability Ability = new Ability(charisma: 1);
 

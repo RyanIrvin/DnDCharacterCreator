@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DnDCharacterCreator.Model.Races
 {
-    class VariantHuman: Human, ISubRace
+    class VariantHuman: Human, ISubrace
     {
         //+1 to two different ability scores
         private Ability Ability = new Ability(constitution: 1);

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DnDCharacterCreator.Model.Races
 {
-    class StoutHalfling
+    class StoutHalfling : Halfling, ISubrace
     {
         private Ability Ability = new Ability(constitution: 1);
 

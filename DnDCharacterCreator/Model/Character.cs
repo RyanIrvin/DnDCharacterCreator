@@ -23,7 +23,7 @@ namespace DnDCharacterCreator.Model
         public Size GetSize() => Size;
         public IRace GetRace() => Race;
         public void SetName(string value) => Name = value;
-        public void SetRace(ISubRace value)
+        public void SetRace(ISubrace value)
         {
             Race = value;
             Ability += value.AbilityModifier;

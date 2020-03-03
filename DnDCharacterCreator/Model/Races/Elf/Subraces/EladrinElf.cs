@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DnDCharacterCreator.Model.Races
 {
-    class EladrinElf: Elf, ISubRace
+    class EladrinElf: Elf, ISubrace
     {
         private Ability Ability = new Ability(intelligence: 1);
 
